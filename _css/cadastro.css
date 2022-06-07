@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,300&family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+.bg-Rosa{
+    background-color:rgb(212, 169, 188);
+}
+
+.btn-roxo{
+    background-color: darkorchid;
+}
+*{
+    font-family: 'IBM Plex Serif', serif;
+    
+}
+#container{
+
+    font-family: 'Open Sans', sans-serif;
+}
+#navbarSupportedContent ul li a:hover{
+color: red;
+}

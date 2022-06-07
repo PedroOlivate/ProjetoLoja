@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,300&family=Oleo+Script+Swash+Caps&display=swap');
+
+*{
+    font-family: 'IBM Plex Serif', serif; 
+}
+
+.bg-Rosa{
+    background-color:rgb(212, 169, 188);
+}
+.bg-Cinzaclaro{
+    background-color: #ddd;
+}
+
+
+
+div{
+    display: inline-block;
+}
+
+#img{
+    margin-top: 70px;
+   padding-left: 40px;
+   
+}
+
+#vestido{
+
+    margin-top: 70px;
+    padding-left: 40px;
+}
+
+#laranja{
+    margin-top: 70px;
+    padding-left: 40px;
+}
+
+#preto{
+    margin-top: 70px;
+    padding-left: 40px; 
+}
+
+#quadrado{
+    margin-top: 70px;
+    padding-left: 40px;
+}
+
+#quadradinho{
+    margin-top: 70px;
+    padding-left: 40px;
+}
+#botão{
+    margin-right: 40px
+}
+

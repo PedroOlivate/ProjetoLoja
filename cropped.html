@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./_img/Icon.png">
+    <link rel="stylesheet" href="./_css/cropped.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title> Boutique176</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-Rosa ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./home.html"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active text-dark dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <font face="Times New Roman"><b>Roupas </b> </font>
+                        </a>
+
+                        <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item " href="cropped.html">
+                                    <font face="Times New Roman"><b>Cropped </b> </font>
+                                </a></li>
+                            <li><a class="dropdown-item " href="jaquetas.html">
+                                    <font face="Times New Roman"><b>Jaquetas/Blusas </b> </font>
+                                </a></li>
+                            <li><a class="dropdown-item " href="calcas.html">
+                                    <font face="Times New Roman"><b>Calças </b> </font>
+                                </a></li>
+                            <li><a class="dropdown-item " href="vestido.html">
+                                    <font face="Times New Roman"><b>Vestidos </b> </font>
+                                </a></li>
+
+                        </ul>
+
+
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a class=" nav-link active  text-dark" aria-current="page" href="bolsas.html">
+                            <font face="Times New Roman"><b>Bolsas </b> </font>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" nav-link active  text-dark" href="acessorios.html">
+                            <font face="Times New Roman"><b>Acessórios </b> </font>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" nav-link active text-dark" href="cadastro.html">
+                            <font face="Times New Roman"><b>Cadastro </b> </font>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" nav-link active text-dark" href="sobre.html">
+                            <font face="Times New Roman"><b>Sobre nós </b> </font>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="jogo.html">
+                            <font face="Times New Roman"><b>Bout Game</b> </font>
+                        </a>
+                    </li>
+
+                
+                    <li class="nav-item">
+                        <a class="nav-link " href="home.html"><img src="./_img/MicrosoftTeams-image.png" alt=""
+                                width="150px" height="40px"></a> 
+                    </li>
+                
+            </div>
+
+
+            </ul>
+        </div>
+        </div>
+          <!-- Button trigger modal -->
+<button id="botão" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Comprar
+  </button>
+  
+  <!-- Modal -->
+  <center>
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">      Insira seus dados de pagamento </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container" id="container">
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <input type="hidden" name="accessKey" value="91a0245d-2c99-4b22-a4e5-8f956b857fc3">
+                    <div class="row align-items-start">
+                        <div class="mt-3 col-6">
+                            <label for="exampleInputEmail1" class="form-label"><b>Email</b> </label>
+                            <input type="email" placeholder="Digite seu email pessoal" class="form-control" name="$email"
+                                id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div class="mb-3">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" name="$chk">
+                                    <label class="form-check-label" for="exampleCheck1"> <b> Deseja receber as novidade da loja? </b></label>
+                                </div>
+                        </div>
+                       
+                        <div class="mt-3 col-6">
+                            <label for="sobrenome" class="form-label"><b>Nome impresso no cartão</b></label>
+                            <input type="text" class="form-control" id="nome" name="$nome" placeholder="Digite o nome">
+                        </div>
+                    </div>
+                    <div class="row align-items-start">
+                        <div class="mt-3 col-6">
+                            <label for="nome" class="form-label"><b>Número do Cartão</b></label>
+                            <input type="text" class="form-control" id="nome" name="$nome" placeholder="Digite o número do cartão">
+        
+                        </div>
+                        
+                        <div class="mt-3 col-6">
+                            <label for="exampleInputPassword1" class="form-label"><b>Data de validade</b></label>
+                            <input type="text" class="form-control" name="$senha" placeholder="XX/XX"
+                                id="exampleInputPassword1">
+                            
+                        </div>
+                    </div>
+                    <div class="row align-items-start">
+                        <div class="mt-3 col-6">
+                            <label for="Telefone" class="form-label"><b> Código de seguraça </b></label>
+                            <input type="text" class="form-control" id="telefone" name="$telefone"
+                                placeholder="CVV">
+                        </div>
+                        <div class="mt-3 col-6">
+                            <label for="CEP" class="form-label"><b>CPF</b></label>
+                            <input type="text" class="form-control" id="cep" name="$cep" placeholder="Digite seu CPF">
+                        </div>
+                    </div>
+        
+                    <div class="row align-items-start">
+                        
+                            <div class="mb-3 col-6">
+                                <label for="validationCustom04" class="form-label fw-bold mt-3">Forma de pagamento</label>
+                                <select class="form-select bg-Cinzaclaro" id="validationCustom04" name="$sexo" required>
+                                    <option>Crédito</option>
+                                    <option>Débito</option>
+                                    <option>Outro</option>
+        
+                                </select>
+                            </div>
+                            <div class="mb-3 col-6">
+                                <label for="validationCustom04" class="form-label fw-bold mt-3">Produto escolhido</label>
+                                <select class="form-select bg-Cinzaclaro" id="validationCustom04" name="$sexo" required>
+                                    <option>Cropped manga bufante rosa</option>
+                                    <option>Cropped manga bufante preta</option>
+                                    <option>Blusa amarração</option>
+                                    <option>Cropped recorte magenta</option>
+                                    <option>Cropped fora de ombro</option>
+                                    <option>Cropped manga bufante lilás</option>
+        
+                                </select>
+                            </div>
+                    </div>
+        
+                    <center>
+                        <div class="mb-3">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" name="$chk">
+                            <label class="form-check-label" for="exampleCheck1"> <b> Confirme </b></label>
+                        </div>
+        
+                        <button type="submit" class="btn btn-secondary">Enviar</button>
+                    </center>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</center>
+    </nav>
+
+<div>
+
+    <!--cropped 1-->
+
+    <div>
+        <p class="vermelho">
+                <img id="img" src="./_img/lilas1.png" width="300px" height="400" alt=""
+                    onmouseover="setNewImage(1)" onmouseout="setOldImage(1)" <a>
+        
+                <div class="product__details">
+        
+                    <h2 class="product__title h4">ㅤCropped manga Bufante rosa</h2>
+                    <div class="product__details__hover">
+        
+                        <p class="product__price h5">
+                            <!-- snippet/product-price.liquid -->
+                            <span class="product__price-price"><span class="money">ㅤㅤㅤㅤㅤㅤR$ 79,90</span></span><br>
+                        </p>
+                        <h3 class="product__vendor h6">ㅤㅤㅤㅤㅤㅤEm até 3x sem juros</h3>
+        
+                        </p>
+                    </div>
+                </a>
+                
+                </div>
+            </p>  
+        
+        </div>
+
+         <!--cropped 2-->
+         <div>
+            <p class="vermelho">       
+           <img id="vestido" src="./_img/pretinho1.png" width="300px" height="400" alt=""
+                onmouseover="setNewImage(2)" onmouseout="setOldImage(2)" <a>
+            <div class="product__details">
+    
+                <h2 class="product__title h4">ㅤCropped manga bufante preto</h2>
+                <div class="product__details__hover">
+    
+                    <p class="product__price h5">
+                        <!-- snippet/product-price.liquid -->
+                        <span class="product__price-price"><span class="money">ㅤㅤㅤㅤㅤㅤR$ 79,90</span></span><br>
+                    </p>
+                    <h3 class="product__vendor h6">ㅤㅤㅤㅤㅤㅤEm até 3x sem juros</h3>
+    
+                    </p>
+    
+                </div>
+    
+            </div>
+            </a>
+    
+            </div>
+        </p>
+    </div>
+
+     <!--cropped 3-->
+     <div>
+        <p class="vermelho">
+        <img id="laranja" src="./_img/roxo1.png" width="300px" height="400" alt="" onmouseover="setNewImage(3)"
+            onmouseout="setOldImage(3)" <a>
+        <div class="product__details">
+
+            <h2 class="product__title h4">ㅤㅤㅤBlusa amarração</h2>
+            <div class="product__details__hover">
+
+                <p class="product__price h5">
+                    <!-- snippet/product-price.liquid -->
+                    <span class="product__price-price"><span class="money">ㅤㅤㅤㅤㅤㅤR$ 69,90</span></span><br>
+                </p>
+                <h3 class="product__vendor h6">ㅤㅤㅤㅤㅤㅤEm até 3x sem juros</h3>
+
+                </p>
+
+            </div>
+        </a>
+        </div>
+
+       
+</p>
+
+</div>
+
+</div>
+
+<div>
+
+    <!--cropped 4-->
+    <div>
+        <p class="vermelho">
+        <img id="preto" src="./_img/rosa1.png" width="300px" height="400" alt="" onmouseover="setNewImage(4)"
+            onmouseout="setOldImage(4)" <a>
+        <div class="product__details">
+    
+            <h2 class="product__title h4">ㅤㅤCropped recorte majenta</h2>
+            <div class="product__details__hover">
+    
+                <p class="product__price h5">
+                    <!-- snippet/product-price.liquid -->
+                    <span class="product__price-price"><span class="money">ㅤㅤㅤㅤㅤㅤR$ 59,90</span></span><br>
+                </p>
+                <h3 class="product__vendor h6">ㅤㅤㅤㅤㅤㅤEm até 3x sem juros</h3>
+    
+                </p>
+    
+            </div>
+        </a>
+        </div>
+        
+    </p>
+    </div>
+
+     <!--cropped 5-->
+     <div>
+        <p class="vermelho">
+        <img id="quadrado" src="./_img/babadinho1.png" width="300px" height="400" alt="" onmouseover="setNewImage(5)"
+            onmouseout="setOldImage(5)" <a>
+        <div class="product__details">
+    
+            <h2 class="product__title h4">ㅤㅤCropped fora de ombro</h2>
+            <div class="product__details__hover">
+    
+                <p class="product__price h5">
+                    <!-- snippet/product-price.liquid -->
+                    <span class="product__price-price"><span class="money">ㅤㅤㅤㅤㅤㅤR$ 119,90</span></span><br>
+                </p>
+                <h3 class="product__vendor h6">ㅤㅤㅤㅤㅤㅤEm até 3x sem juros</h3>
+    
+                </p>
+    
+            </div>
+        </a>
+        </div>
+        
+    </p>
+    </div>
+
+    <!--cropped 6-->
+    <div>
+        <p class="vermelho">
+        <img id="quadradinho" src="./_img/babado1.png" width="300px" height="400" alt="" onmouseover="setNewImage(6)"
+            onmouseout="setOldImage(6)" <a>
+        <div class="product__details">
+    
+            <h2 class="product__title h4">ㅤㅤCropped manga bufante lilás</h2>
+            <div class="product__details__hover">
+    
+                <p class="product__price h5">
+                    <!-- snippet/product-price.liquid -->
+                    <span class="product__price-price"><span class="money">ㅤㅤㅤㅤㅤㅤR$ 79,90</span></span><br>
+                </p>
+                <h3 class="product__vendor h6">ㅤㅤㅤㅤㅤㅤEm até 3x sem juros</h3>
+    
+                </p>
+    
+            </div>
+        </a>
+        </div>
+       
+    </p>
+    </div>
+
+    </div>
+
+    <footer class="mt-5 p-4 bg-dark text-white text-center">
+
+        <p>
+        <h3 class="text-white font font-monospace fw-italic ">
+            <font face=""> <b>B o u t i q u e 1 7 6 </b> </font>
+        </h3>
+
+        <!--link para Instagram-->
+        &nbsp;&nbsp; <a href="https://www.instagram.com/boutique_176/"><img src="./_img/2048px-Instagram_icon.png"
+                alt="" width="40px" height="40px"></a>
+
+
+
+        <!--link para whatsapp-->
+        &nbsp;|&nbsp; <a href="https://api.whatsapp.com/send?phone=5519993327033"><img src="./_img/WhatsApp.svg.webp" alt="" width="40px" height="40px"></a>
+
+        </p>
+
+        <p>
+            <h3>Rua das vitórias régias, 317, Sala01-Galeria Victoria Mall, Valinhos-SP</h3>
+        </p>
+
+
+
+    </footer>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+
+    </script>
+
+<script>
+
+function setNewImage(x) {
+        if (x == 1) {
+            document.getElementById("img").src = "./_img/lilas2.png"
+        } else if (x == 2) {
+            document.getElementById("vestido").src = "./_img/pretinho2.png"
+        } else if (x == 3) {
+            document.getElementById("laranja").src = "./_img/roxo2.png"
+        } else if (x == 4) {
+            document.getElementById("preto").src = "./_img/rosa2.png"
+        } else if (x == 5) {
+            document.getElementById("quadrado").src = "./_img/babadinho2.png"
+        } else if (x == 6) {
+            document.getElementById("quadradinho").src = "./_img/babado2.png"
+        }
+    }
+    function setOldImage(x) {
+        if (x == 1) {
+            document.getElementById("img").src = "./_img/lilas1.png"
+        } else if (x == 2) {
+            document.getElementById("vestido").src = "./_img/pretinho1.png"
+        } else if (x == 3) {
+            document.getElementById("laranja").src = "./_img/roxo1.png"
+        } else if (x == 4) {
+            document.getElementById("preto").src = "./_img/rosa1.png"
+        } else if (x == 5) {
+            document.getElementById("quadrado").src = "./_img/babadinho1.png"
+        } else if (x == 6) {
+            document.getElementById("quadradinho").src = "./_img/babado1.png"
+        }
+    }
+
+</script>
+
+</html>
+
+    
+
